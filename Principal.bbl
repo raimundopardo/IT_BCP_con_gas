@@ -1,0 +1,91 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nyt}
+    \entry{Martin1999}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=5158f481e3ef2c36e8e4ae359a093690}{Martín}{M\bibinitperiod}{A.\bibnamedelimi M.}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6be6e05fa0014690437d255a55239a99}{Kenyery}{K\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c1984eb1108a6b474ea13149b5b97e17}{Tremante}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=5158f481e3ef2c36e8e4ae359a093690}{Martín}{M\bibinitperiod}{A.\bibnamedelimi M.}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6be6e05fa0014690437d255a55239a99}{Kenyery}{K\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c1984eb1108a6b474ea13149b5b97e17}{Tremante}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Caracas, Venezuela}%
+      }
+      \list{organization}{1}{%
+        {SPE}%
+      }
+      \strng{namehash}{20125be71d5625702590f8865517d1f1}
+      \strng{fullhash}{fde69de801cf7109416d46a48bfb22b2}
+      \field{sortinit}{M}
+      \field{labelyear}{1999}
+      \field{labeltitle}{Experimental study of two phase pumping in progressive cavity pumps}
+      \field{booktitle}{Latin American and Caribbean Petroleum Engineering Conference}
+      \field{eventday}{21}
+      \field{eventendday}{21}
+      \field{eventendmonth}{04}
+      \field{eventendyear}{1999}
+      \field{eventmonth}{04}
+      \field{eventyear}{1999}
+      \field{title}{Experimental study of two phase pumping in progressive cavity pumps}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 6}
+      \verb{doi}
+      \verb 10.2118/53967-MS
+      \endverb
+    \endentry
+    \entry{Olivet2002}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=fce72cccf03f466fe672111ed3f8d9d2}{Olivet}{O\bibinitperiod}{Aurelio}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ab91eae1c41edb57abd066742f581456}{Gamboa}{G\bibinitperiod}{José}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=20d12f8ffd71544cf9d666f549695f81}{Kenyery}{K\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=fce72cccf03f466fe672111ed3f8d9d2}{Olivet}{O\bibinitperiod}{Aurelio}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ab91eae1c41edb57abd066742f581456}{Gamboa}{G\bibinitperiod}{José}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=20d12f8ffd71544cf9d666f549695f81}{Kenyery}{K\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {San Antonio, Texas}%
+      }
+      \list{organization}{1}{%
+        {SPE}%
+      }
+      \strng{namehash}{d3a07da4b60806fcf6d6d30d7653b03b}
+      \strng{fullhash}{72b1507a8194dd069dcbf5e957771603}
+      \field{sortinit}{O}
+      \field{labelyear}{2002}
+      \field{labeltitle}{Experimental study of two-phase pumping in a progressive cavity pump metal to metal}
+      \field{booktitle}{Annual Technical Conference and Exhibition}
+      \field{title}{Experimental study of two-phase pumping in a progressive cavity pump metal to metal}
+      \field{year}{2002}
+      \verb{doi}
+      \verb 10.2118/77730-MS
+      \endverb
+      \warn{\item Datamodel: Entry 'Olivet2002' (Referencias2.bib): Invalid format 'September 29 - October 2' of date field 'eventdate' - ignoring}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

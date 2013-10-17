@@ -1,0 +1,16 @@
+[0] Config.pm:425> INFO - This is Biber 1.7
+[0] Config.pm:428> INFO - Logfile is 'Principal.blg'
+[515] biber-MSWIN:249> INFO - === Mié Oct , 2013, 15:07:40
+[515] Biber.pm:333> INFO - Reading 'Principal.bcf'
+[728] Biber.pm:630> INFO - Found 2 citekeys in bib section 0
+[918] Biber.pm:2997> INFO - Processing section 0
+[1202] Biber.pm:3134> INFO - Looking for bibtex format file 'Referencias2.bib' for section 0
+[1305] bibtex.pm:911> INFO - Decoding LaTeX character macros into UTF-8
+[1311] bibtex.pm:786> INFO - Found BibTeX data source 'Referencias2.bib'
+[1465] Utils.pm:169> WARN - Datamodel: Entry 'Olivet2002' (Referencias2.bib): Invalid format 'September 29 - October 2' of date field 'eventdate' - ignoring
+[1904] Biber.pm:2883> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[1904] Biber.pm:2889> INFO - Sorting 'entry' list 'nyt' keys
+[1905] Biber.pm:2893> INFO - No sort tailoring available for locale 'English_United States.1252'
+[1943] bbl.pm:479> INFO - Writing 'Principal.bbl' with encoding 'UTF-8'
+[1944] bbl.pm:552> INFO - Output to Principal.bbl
+[1950] Biber.pm:105> INFO - WARNINGS: 1

@@ -1,0 +1,411 @@
+
+\usepackage{helvet} % Fuente Helvética para los informes técnicos.
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+%\pagestyle{fancy}  %este comando genera errores.
+
+\usepackage{totcount} %necesario para totalizacion de destinatarios en lista de distribucion
+
+\usepackage{graphicx}
+
+\usepackage{pstricks}
+
+% afterpage se utiliza para evitar acumulacion de figuras sin procesar
+\usepackage{afterpage}
+
+\usepackage{amsmath}
+
+\usepackage{setspace}
+
+\usepackage{units}
+
+
+
+\usepackage{url}
+
+\usepackage{euscript}
+
+\usepackage{textcomp}
+
+\usepackage[noconfig]{unitsdef}
+
+\usepackage{psfrag}
+
+\usepackage{float}
+
+\usepackage{parskip} % mejora el aspecto de la separacion entre párrafos
+
+
+
+\usepackage{titlesec} % necesario para cambiar el estilo de los títulos de seccion y referencias
+
+\usepackage[spanish]{babel}
+
+\usepackage{fancyhdr}
+
+\usepackage{ccaption}
+
+\captiondelim{. }
+
+\captionnamefont{\normalfont\normalsize}
+
+\captiontitlefont{\normalfont\normalsize}
+
+\usepackage{sectsty}
+
+\usepackage{enumitem}
+
+\usepackage{tocloft}
+
+\usepackage{remreset} %necesario para eliminar en número de sección en la numeracipon de figuras y tablas
+
+\usepackage[spanish]{babel}
+
+\usepackage{csquotes}
+
+\usepackage[citestyle=authoryear,language = spanish, bibstyle=authoryearint1,backend=biber,abbreviate=true,maxcitenames=2]{biblatex}
+
+
+
+
+\renewcommand{\normalfont}{\sffamily}
+
+%Espaciado de linea de una linea dentro de los párrafos
+
+\renewcommand*{\baselinestretch}{1.}
+
+%espacio entre párrafos.
+
+\setlength{\parskip}{1 em}
+
+%Se eliminan las sangrias
+
+\setlength{\parindent}{0in}
+
+
+\titleformat{\chapter}{\normalfont\bfseries\uppercase}{\thechapter.}{1 ex}{}
+
+\titlespacing*{\chapter}{0 ex}{0 ex}{0 ex}
+
+\titleclass{\section}{straight} %este comando es necesatio para que \titleformat \section funcione cuando se utilice a mitad de pagina.
+
+\titleformat{\section}{\normalfont\bfseries}{\thesection.}{1 ex}{}
+%
+\titlespacing*{\section}{0 ex}{0 ex}{0 ex}
+%%
+
+
+\makeatletter
+
+
+                                   
+% los siguientes comandos eliminan los números de la seccion en los títulos de las figuras y tablas                                   
+                                   
+
+ \@removefromreset{figure}{chapter}
+ 
+ 
+ \renewcommand{\thefigure}{\arabic{figure}}
+ 
+ 
+  \@removefromreset{table}{chapter}
+  
+  
+  \renewcommand{\thetable}{\arabic{table}}
+                                      
+
+\makeatother
+
+
+\renewcommand{\tablename}{\normalfont{Tabla}}
+
+\renewcommand{\figurename}{\normalfont{Figura}}
+
+
+
+% EL valor por omisión de patentus en español es Pat. americana. Esta denominación se cambia en la siguiente definición (biblatex):
+ 
+\DefineBibliographyStrings{spanish}{ %
+patentus = {Patente US}}
+
+%Formato Intevep
+
+\headheight = 14pt
+
+
+\voffset = -20pt
+
+\oddsidemargin = -2pt
+
+\evensidemargin = -2pt
+
+\textheight = 617pt
+
+\textwidth = 470pt
+
+\parindent = 0pt
+
+
+
+
+\renewcommand{\floatpagefraction}{0.7}
+
+
+
+
+
+
+
+\renewcommand{\headrulewidth}{0pt}  %elimina la línea horizontal en los encabezados de página
+
+\newcommand{\NIT}{\normalfont{INT-14224,2013}}
+
+\newcommand{\Intevep}{\small \textbf{Intevep, S.A.} Centro de Investigación y Desarrollo. Filial de Petróleos de Venezuela, S.A.}
+
+\newcounter{numerocopia}
+
+\setcounter{numerocopia}{0}
+
+\regtotcounter{numerocopia}
+
+
+\newcommand{\destinatario}[3]{
+
+\stepcounter{numerocopia}
+
+\begin{tabbing}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \=      \kill
+
+\normalfont{#1}                          \> \normalfont{\thenumerocopia(\total{numerocopia})} \\
+\normalfont{#2  }                    \\
+\normalfont{Responsable: #3 }
+
+\end{tabbing}
+}
+
+\newenvironment{distribucion}{%
+
+\begin{center} {\normalfont\textbf{LISTA DE DISTRIBUCI\'ON}} \end{center}
+
+\begin{tabbing}
+    
+    
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \=      \kill
+    
+                                                                                 \>\normalfont{No.} \=\normalfont{de copias}  \\
+
+\end{tabbing}}
+{\newpage}
+
+
+\newenvironment{sumario}{\begin{center} 
+\normalfont\textbf{SUMARIO}
+\end{center}
+
+\addcontentsline{toc}{section}{\bfseries SUMARIO}
+
+\normalfont}{\newpage}
+
+\newcommand{\contenidopreliminar}{
+
+%\singlespacing
+
+\frontmatter
+
+\setcounter{page}{3} % es necesario fijar la primera página en 3.
+
+\pagestyle{fancy}
+
+\lhead[\NIT]{\NIT}
+
+\rhead[]{}
+\cfoot{\normalfont{\thepage \\ \Intevep}}
+}
+
+%Se eliminan los puntos de las tablas de contenido y figuras
+
+\renewcommand{\cftdotsep}{\cftnodots}  % comando de tocloft para eliminar los puntos separadores entre seccion y página
+
+
+
+
+
+
+
+% Tabla de contenido:
+
+\newcommand{\tabladecontenido}{
+
+\normalfont
+
+
+
+\fancypagestyle{plain}  % Es necesario colocar este comando para que aparezca el heading en la página de tabla de contenido.
+
+\lhead[\NIT]{\NIT}
+
+\cfoot{\normalfont{\thepage \\ \Intevep}}
+    
+\renewcommand*{\contentsname}{\normalsize \centerline{TABLA DE CONTENIDO}}  %Por alguna razón, se requiere el * para cambiar \contentsname. Ver libro de Salinas, p.95.    
+ 
+
+\setlength{\cftbeforetoctitleskip}{-1cm} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+\setlength{\cftaftertoctitleskip}{24pt} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+%Los siguientes dos comandos de tocloloft reducen a cero la indentacion en la tabla de contenido
+
+\setlength{\cftchapindent}{0mm}
+
+\setlength{\cftsecindent}{0mm}
+
+
+\renewcommand{\cftchapaftersnum}{.}
+
+\renewcommand{\cftsecaftersnum}{.}
+
+\renewcommand{\cftchappagefont}{\normalfont} % coloca el número de la página en tipo normal.
+
+\renewcommand{\cftsecfont}{\bfseries} % se utiliza bolf para las secciones
+
+\setlength{\cftbeforechapskip}{1em} % se fija la separación entre entradas
+
+\setlength{\cftbeforesecskip}{1em}
+
+\clearpage  
+ 
+   
+\tableofcontents    
+}
+
+% Se agregan las líneas con el rótulo de páginas en las tablas de contenido, figuras y tablas.
+
+\addtocontents{toc}{\protect \rightline{Página}}
+
+\addtocontents{lof}{\protect  \rightline{Página}}
+
+\addtocontents{lot}{\protect  \rightline{Página}}
+
+
+% Se utliliza el paquete babel español para redefinir listfiguresname
+
+\renewcommand*{\spanishlistfigurename}{\normalsize \centerline{LISTA DE ILUSTRACIONES}}
+
+
+
+\newcommand{\listadeilustraciones}{
+
+\normalfont
+
+\setlength{\cftbeforeloftitleskip}{-1cm} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+\setlength{\cftafterloftitleskip}{24pt} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+\clearpage
+
+\setlength{\cftfigindent}{0mm}
+
+
+
+\setlength{\cftfignumwidth}{4em}
+
+\renewcommand{\cftfigpresnum}{Fig.\thinspace}
+
+\renewcommand{\cftfigaftersnum}{.}
+
+\setlength{\cftbeforefigskip}{1em} % se fija la separación entre entradas
+
+\listoffigures
+
+\addcontentsline{toc}{section}{\textbf{LISTA DE ILUSTRACIONES}}
+
+
+
+}
+
+\renewcommand*{\spanishlisttablename}{\normalsize \centerline{LISTA DE TABLAS}}  %Por alguna razón, se requiere el * para cambiar \contentsname. Ver libro de Salinas, p.95.    
+
+\newcommand{\listadetablas}{
+
+\normalfont
+
+\setlength{\cftbeforelottitleskip}{-1cm} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+\setlength{\cftafterlottitleskip}{24pt} % comando del package tocloft para reducir el espacio antes del título de tabla de contenido
+
+\clearpage
+
+\setlength{\cfttabnumwidth}{4em}
+
+\setlength{\cfttabindent}{0mm}
+
+\renewcommand{\cfttabpresnum}{Tabla\thinspace}
+
+\renewcommand{\cfttabaftersnum}{.}
+
+
+\setlength{\cftbeforetabskip}{1em} % se fija la separación entre entradas
+
+\listoftables
+
+\addcontentsline{toc}{section}{\textbf{LISTA DE TABLAS}}
+
+\newpage
+
+}
+
+
+
+
+
+\newcommand{\contenidoprincipal}{
+
+\mainmatter
+
+% Se redefine el estilo plain para utilizarlo en la primera página de texto.
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyhead[LO]{\NIT}
+\fancyfoot[C]{\Intevep}} % except the center
+
+\pagestyle{fancy}
+
+\rhead[\NIT]{\thepage}
+
+\lhead[\thepage]{\NIT}
+
+\cfoot{\Intevep}
+
+\thispagestyle{plain} % Este comando es necesario para suprimir el número en la página 1.
+}
+
+% % % % % % % %
+
+\newcommand{\referencias}{
+
+\fancypagestyle{plain}  % Es necesario colocar este comando para que aparezca el heading en la página de referencias.
+
+\vspace*{-5cm} % este comando debe ir antes de \bibliographystyle. En caso contrario, no funciona.
+
+\titleformat{\chapter}{\normalfont}{}{}{}{}
+
+\titlespacing*{\chapter}{0pt}{0pt}{12pt}
+
+
+
+\printbibliography[title=\textbf{REFERENCIAS}]
+
+\addcontentsline{toc}{section}{\textbf{REFERENCIAS}}
+
+}
+
+
+\newcommand{\fuente}[1]{\small Fuente: #1}
+

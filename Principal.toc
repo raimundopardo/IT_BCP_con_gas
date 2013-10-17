@@ -1,0 +1,12 @@
+\rightline {P\IeC {\'a}gina}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {spanish}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\textbf {LISTA DE ILUSTRACIONES}}{\es@scroman {iv}}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}INTRODUCCI\IeC {\'O}N}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}REVISI\IeC {\'O}N DE LITERATURA}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\textbf {REFERENCIAS}}{6}
